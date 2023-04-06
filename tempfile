@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+    <title>Centered Body with Lorem Ipsum</title>
+    <style>
+      * {
+        height: 100%;
+        margin: 0
+      }
+
+      .container-bod {
+        height: 25%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 90px;
+        background-color: #fff; 
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+           
+    .container-bod > h1 {
+        height: 35%;
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+    .container-bod > p {
+      height: 25%;
+    }
+
+    .body-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+      } 
+
+      .hero {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(coffee-head.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 60%;
+      }
+
+
+      .hero-header {
+        text-align: center;
+        color: white;
+        font-size: 6rem;
+      }
+
+
+    </style>
+  </head>
+  
+  <body>
+
+    <div class="hero">
+      <div class="hero-header">
+          <h1>Coffee website</h1>
+          <p>lorem ipsum</p>
+      </div>
+    </div>
+
+
+    <div class="container-bod">
+      <h1>Centered Body with Lorem Ipsum</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi auctor elit augue, eget blandit lacus ultricies eget. Proin venenatis velit risus, quis tincidunt lorem luctus ac. Vestibulum in est in ipsum interdum lobortis.</p>
+      <p>Donec auctor tortor sed nulla congue, sit amet bibendum purus iaculis. Aliquam bibendum arcu ac nisi dictum, a venenatis lacus rhoncus. Integer tristique mauris in quam ullamcorper volutpat.</p>
+    </div>
+  </body>
+
+ 
+</html>
