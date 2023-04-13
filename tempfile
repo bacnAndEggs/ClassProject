@@ -2,9 +2,9 @@
 <html>
   <head>
   <meta name="viewport" content="width=device-width", initial-scale="1">
-    <title>Centered Body with Lorem Ipsum</title>
+    <title>Coffee</title>
     <style>
-      * {
+      body, html {
         height: 100%;
         margin: 0
       }
@@ -18,15 +18,15 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
            
-    .container-bod > h1 {
+    .container-bod h1 {
         height: 35%;
-        font-size: 36px;
+        font-size: 2.1rem;
         margin-bottom: 20px;
         text-align: center;
       }
 
-    .container-bod > p {
-      height: 25%;
+    .container-bod p {
+      font-size: 1rem;
     }
 
     .body-image {
@@ -45,7 +45,6 @@
         height: 60%;
       }
 
-
       .hero-header {
         text-align: center;
         color: white;
@@ -61,7 +60,7 @@
     <div class="hero">
       <div class="hero-header">
           <h1>Coffee website</h1>
-          <p>lorem ipsum</p>
+          <p>Lorem ipsum dolor sit amet.</p>
       </div>
     </div>
 
