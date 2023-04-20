@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 /* FOOTER */
 
 footer {
@@ -7,3 +12,20 @@ footer {
     background-color: #000;
     color: #fff;
 }
+
+footer ul.social {
+    list-style: none;
+    padding-top: 1rem;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+footer ul.social li {
+    display: inline-block;
+    padding-right: 0.8rem;
+  }
+  
+footer ul.social li a {
+    color: #757575;
+    transition: all 0.2s ease;
+  }
