@@ -1,164 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Roboto:wght@300;400&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*------start of testimonials section------*/
-
-#testimonials {
-width:100%;
-margin: 0 auto;
-}
-
-.card-wrap {
-position: relative;
-width: 60%;
-max-width: 1600px;
-margin: 0 auto;
-}
-
-.card-heading {
-  font-size: 1.5rem;
-  font-family: 'Heebo', sans-serif;
-  padding: 1rem 0 1rem 0;
-  width: 100%;
-  text-align: center;
-}
-.card {
-  /* Add shadows to create the "card" effect */
-  float: left;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  min-width: 200px;
-  max-width: 23%;
-  margin: 0 1% 0 1%;
-  transition: 0.3s;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.5);
-}
-
-/* Add some padding inside the card container */
-.card-container {
-  padding: 1rem 2rem;
-}
-
-/* Add rounded corners to the top left and the top right corner of the image */
-.card img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 5px 5px 0 0;
-}
-
-.card h3 {
-  font-family: 'Heebo', sans-serif;
-}
-
-.card p {
-  font-family: 'Roboto', sans-serif;
-  padding-top: 8px;
-}
-
-/*--------end of testimonials section---------*/
-
-
 /* FOOTER */
 
-footer {
-    text-align: center;
-    padding: 15px;
-    font-size: 15px;
-    background-color: #000;
-    color: #fff;
-
-    clear: both;
+.footer {
+  width: 100%;
+  padding: 100px 15%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
 }
 
-
-/* Contact Form */
-
-#contact {
-    font-family: 'Heebo', sans-serif;
-    clear: both;
-    margin: 0 auto;
-    padding: 50px 100px;
-    max-width: 900px;
-    background-color: #e4bc84;
+.footer div {
+  text-align: center;
 }
 
-#contact h2 {
-    text-align: center;
+.footer .footer-newsletter {
+  flex-grow: 2;
 }
 
-#contact form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+.footer div h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
 }
 
-#contact .form-section {
-    display: flex;
-    height: 100%;
-    justify-content: flex-start;
-    margin: 8px 0;
+.footer .footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-#contact textarea {
-    resize: vertical;
-    flex-basis: 75%;
-    border-radius: 0 16px 16px 0;
-    border: none;
-    font-size: 14px;
-    padding: 8px;
-    font-family: 'Heebo', sans-serif;
+.footer form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
 }
 
-#contact input {
-    flex-basis: 75%;
-    border-radius: 0 100px 100px 0;
-    outline: none;
-    border: none;
-    padding: 10px;
+.footer form button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
 }
 
-#contact label {
-    flex-basis: 25%;
-    padding: 10px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background-color: #37251b;
-    border-radius: 50px 0 0 50px;
-    min-width: 100px;
+.footer .social-icons {
+  margin-top: 30px;
 }
 
-#contact input[type=submit] {
-    border-radius: 50px;
-    align-self: flex-end;
-    margin-top: 10px;
-    padding: 15px 80px;
-    background-color: #37251b;
-    color: white;
-    font-size: 16px;
-    transition: background-color 0.25s ease;
-}
-
-#contact input[type=submit]:hover {
-    background-color: #795f50;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 768px) {
-    #contact {
-        padding: 40px 10px;
-    }
+.footer .social-icons i {
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
 }
