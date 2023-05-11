@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Poppins|Source+Sans+Pro|Montserrat:400,900&display=swap");
 
-.container {
+.menu-container {
  max-width: 50rem;
  margin: 0 auto;
  color: white;
@@ -14,7 +14,6 @@
   padding: 1rem;
   background-color: #A8886C;
   border: 10px double #c9a789;
-  
   border-radius: 1rem;
   margin-top: 2rem;
 }
