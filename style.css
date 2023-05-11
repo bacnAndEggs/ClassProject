@@ -4,6 +4,85 @@
     box-sizing: border-box;
 }
 
+/* CONTACT FORM */
+
+#contact {
+    font-family: 'Heebo', sans-serif;
+    clear: both;
+    margin: 0 auto;
+    padding: 50px 100px;
+    max-width: 900px;
+    background-color: #e4bc84;
+}
+
+#contact form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+#contact .form-section {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    margin: 8px 0;
+}
+
+#contact textarea {
+    resize: vertical;
+    flex-basis: 75%;
+    border-radius: 0 16px 16px 0;
+    border: none;
+    font-size: 14px;
+    padding: 8px;
+    font-family: 'Heebo', sans-serif;
+}
+
+#contact input {
+    flex-basis: 75%;
+    border-radius: 0 100px 100px 0;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+#contact label {
+    flex-basis: 25%;
+    padding: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #37251b;
+    border-radius: 50px 0 0 50px;
+    min-width: 100px;
+}
+
+#contact input[type=submit] {
+    border-radius: 50px;
+    align-self: flex-end;
+    margin-top: 10px;
+    padding: 15px 80px;
+    background-color: #37251b;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.25s ease;
+}
+
+#contact input[type=submit]:hover {
+    background-color: #795f50;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact {
+        padding: 40px 10px;
+    }
+}
+
+
 /* FOOTER */
 
 .footer {
