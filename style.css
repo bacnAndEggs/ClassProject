@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* FRONT */
 
   .hero {
@@ -19,6 +23,7 @@
   }
 
   .hero-header {
+    padding-top: 13vh;
     top: 0;
     text-align: center;
     color: #d9d8d4;
@@ -27,6 +32,7 @@
 
   .hero-header h1 {
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 2.5vh;  
   }
 
 
@@ -72,6 +78,12 @@
 
     .hero {
       height: 75vh;
+    }
+
+    .hero-buttons button {
+      padding: 5vw 11vw;
+      font-size: 4.2vw;
+      min-width: 30vw;
     }
   }
 
