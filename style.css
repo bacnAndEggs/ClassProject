@@ -271,6 +271,13 @@ html {
   padding: 10px 30px;
   font-size: 15px;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.footer form button:hover {
+  background-color: #fff;
+  color: #333;
+  font-weight: 700;
 }
 
 .footer .social-icons {
@@ -283,7 +290,7 @@ html {
   cursor: pointer;
 }
 
-
+/* FOOTER END*/
 
 
 .shop {
