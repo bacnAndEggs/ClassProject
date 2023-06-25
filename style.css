@@ -341,6 +341,7 @@ html {
 }
 
 .shop-header {
+    position: relative;
     text-align: center;
     font-family: 'Heebo', sans-serif;
     font-size: 60px;
@@ -349,6 +350,16 @@ html {
     max-width: 1200px;
     margin: 20px auto 0;
     border-radius: 16px 16px 0 0;
+    color: white;
+}
+
+.shop-header i {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    translate: 0 -50%;
+    font-size: 50px;
+    cursor: pointer;
     color: white;
 }
 
