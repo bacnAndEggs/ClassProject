@@ -77,6 +77,7 @@ function showMenu() {
 
         let cartRow = document.createElement("div");
         cartRow.classList.add("cart-row");
+        cartRow.classList.add("empty-cart");
 
         cartRow.appendChild(nameDisplay);
         cartRow.appendChild(priceDisplay);
@@ -88,7 +89,7 @@ function showMenu() {
         let totalName = document.createElement("h3");
         let totalDisplay = document.createElement("h3");
 
-        totalName.innerText = "Grand Total";
+        totalName.innerText = "Total + HST";
         
         // Calcualte grand total based on prices in cart array
         let price = 0;  
