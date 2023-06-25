@@ -16,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* FRONT */
@@ -100,12 +101,23 @@ html {
 /* CONTACT FORM */
 
 #contact {
+    background-color: var(--darkVanilla);
+
+}
+
+.contact-content {
     font-family: 'Heebo', sans-serif;
     clear: both;
     margin: 0 auto;
     padding: 50px 100px;
     max-width: 900px;
-    background-color: #e4bc84;
+}
+
+.contact-content h2 {
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 2px solid var(--lightBrown);
+    padding-bottom: 15px;
 }
 
 #contact form {
@@ -119,6 +131,15 @@ html {
     height: 100%;
     justify-content: flex-start;
     margin: 8px 0;
+}
+
+#contact .form-section:first-of-type {
+    padding-top: 25px;
+}
+
+#contact .form-section:last-of-type {
+    padding-bottom: 25px;
+    border-bottom: 2px solid var(--lightBrown);
 }
 
 #contact textarea {
@@ -148,7 +169,7 @@ html {
     justify-content: center;
     text-align: center;
     color: white;
-    background-color: #37251b;
+    background-color: var(--darkBrown);
     border-radius: 50px 0 0 50px;
     min-width: 100px;
 }
@@ -158,21 +179,26 @@ html {
     align-self: flex-end;
     margin-top: 10px;
     padding: 15px 80px;
-    background-color: #37251b;
+    background-color: var(--englishRed);
     color: white;
     font-size: 16px;
     transition: background-color 0.25s ease;
 }
 
 #contact input[type=submit]:hover {
-    background-color: #795f50;
+    background-color: #7f1b2a;
     cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
-    #contact {
+    .contact-content {
         padding: 40px 10px;
     }
+
+    #contact input[type=submit] {
+        align-self: center;
+    }
+
 }
 
 
@@ -505,6 +531,8 @@ html {
 #place-order:hover {
     opacity: 0.75;
 }
+
+/* END MENU */
 
 /*---Testimonials---*/
 #testimonials {
