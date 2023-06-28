@@ -248,8 +248,8 @@ html {
 .footer {
   width: 100%;
   padding: 100px 15%;
-  background-color: #333;
-  color: #fff;
+  background-color: #55463C;
+  color: #EEEAD9;
   display: flex;
 }
 
@@ -270,7 +270,7 @@ html {
 .footer .footer-links a {
   display: block;
   text-decoration: none;
-  color: #fff;
+  color: #EEEAD9;
   margin-bottom: 10px;
 }
 
@@ -283,12 +283,15 @@ html {
   margin-bottom: 40px;
   outline: none;
   border: none;
+  background-color: #EEEAD9;
+  color: #55463C;
+  font-weight: bold;
 }
 
 .footer form button {
   background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #EEEAD9;
+  color: #EEEAD9;
   padding: 10px 30px;
   font-size: 15px;
   cursor: pointer;
@@ -296,8 +299,8 @@ html {
 }
 
 .footer form button:hover {
-  background-color: #fff;
-  color: #333;
+  background-color: #EEEAD9;
+  color: #55463C;
   font-weight: 700;
 }
 
