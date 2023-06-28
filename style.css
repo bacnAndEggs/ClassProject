@@ -1,17 +1,17 @@
 :root {
-    --englishRed: #B04B5A;
-    --darkBrown: #55463C;
-    --lightBrown: #B07D57;
-    --darkVanilla: #D5C0AC;
-    --white: #EEEAD9;
-    --yellow: #E8AA5F;
+  --englishRed: #B04B5A;
+  --darkBrown: #55463C;
+  --lightBrown: #B07D57;
+  --darkVanilla: #D5C0AC;
+  --white: #EEEAD9;
+  --yellow: #E8AA5F;
 }
 
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -20,168 +20,162 @@ html {
 
 /* FRONT */
 
-  .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.5)), url(img/front/coffee-head.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(img/front/coffee-head.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 
-    width: 100vw;
-    height: 80vh;
-  }
+  width: 100%;
+  height: 80vh;
+}
 
+.hero-header {
+  padding-top: 13vh;
+  top: 0;
+  text-align: center;
+  color: #d9d8d4;
+  font-size: 4vw;
+}
+
+.hero-header h1 {
+  font-family: Lato, sans-serif;
+  padding-bottom: 2.5vh;
+}
+
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  bottom: 5vh;
+  left: 0;
+  right: 0;
+}
+
+.hero-buttons button a {
+  color: #d9d8d4;
+  text-decoration: none;
+}
+
+.hero-buttons button {
+  background-color: rgba(45, 51, 47, 0.6);
+  color: #d9d8d4;
+  border: 0.5vw solid #2d332f;
+  border-radius: 2vw;
+  padding: 2vw 5vw;
+  font-size: 2.5vw;
+  margin: 0 1vw;
+  min-width: 15vw;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-buttons button:hover {
+  transform: translateY(-0.5vh);
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.2);
+  background-color: rgba(45, 51, 47, 0.9);
+}
+
+@media (max-width: 900px) {
   .hero-header {
-    padding-top: 13vh;
-    top: 0;
-    text-align: center;
-    color: #d9d8d4;
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
-  .hero-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    padding-bottom: 2.5vh;  
-  }
-
-
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-
-    bottom: 5vh;
-    left: 0;
-    right: 0;
-  }
-
-  .hero-buttons button a {
-    color: #d9d8d4;
-    text-decoration: none;
+  .hero {
+    height: 75vh;
   }
 
   .hero-buttons button {
-    background-color: rgba(45,51,47,0.6);
-    color: #d9d8d4;
-    border: 0.5vw solid #2d332f;
-    border-radius: 2vw;
-    padding: 2vw 5vw;
-    font-size: 2.5vw;
-    margin: 0 1vw;
-    min-width: 15vw;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    padding: 5vw 11vw;
+    font-size: 4.2vw;
+    min-width: 30vw;
   }
-
-  .hero-buttons button:hover {
-    transform: translateY(-0.5vh);
-    box-shadow: 0 1vh 2vh rgba(0,0,0,0.2);
-    background-color: rgba(45,51,47,0.9);
-  }
-
-  @media (max-width: 900px) {
-    .hero-header {
-      font-size: 6vw;
-    }
-
-    .hero {
-      height: 75vh;
-    }
-
-    .hero-buttons button {
-      padding: 5vw 11vw;
-      font-size: 4.2vw;
-      min-width: 30vw;
-    }
-  }
+}
 
 
 /* CONTACT FORM */
-
 #contact {
-    font-family: 'Heebo', sans-serif;
-    clear: both;
-    margin: 0 auto;
-    padding: 50px 100px;
-    max-width: 900px;
-    background-color: #e4bc84;
+  font-family: 'Heebo', sans-serif;
+  clear: both;
+  margin: 0 auto;
+  padding: 50px 100px;
+  max-width: 900px;
+  background-color: #e4bc84;
 }
 
 #contact form {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 #contact .form-section {
-    display: flex;
-    height: 100%;
-    justify-content: flex-start;
-    margin: 8px 0;
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  margin: 8px 0;
 }
 
 #contact textarea {
-    resize: vertical;
-    flex-basis: 75%;
-    border-radius: 0 16px 16px 0;
-    border: none;
-    font-size: 14px;
-    padding: 8px;
-    font-family: 'Heebo', sans-serif;
+  resize: vertical;
+  flex-basis: 75%;
+  border-radius: 0 16px 16px 0;
+  border: none;
+  font-size: 14px;
+  padding: 8px;
+  font-family: 'Heebo', sans-serif;
 }
 
 #contact input {
-    flex-basis: 75%;
-    border-radius: 0 100px 100px 0;
-    outline: none;
-    border: none;
-    padding: 10px;
+  flex-basis: 75%;
+  border-radius: 0 100px 100px 0;
+  outline: none;
+  border: none;
+  padding: 10px;
 }
 
 #contact label {
-    flex-basis: 25%;
-    padding: 10px;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    background-color: #37251b;
-    border-radius: 50px 0 0 50px;
-    min-width: 100px;
+  flex-basis: 25%;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background-color: #37251b;
+  border-radius: 50px 0 0 50px;
+  min-width: 100px;
 }
 
 #contact input[type=submit] {
-    border-radius: 50px;
-    align-self: flex-end;
-    margin-top: 10px;
-    padding: 15px 80px;
-    background-color: #37251b;
-    color: white;
-    font-size: 16px;
-    transition: background-color 0.25s ease;
+  border-radius: 50px;
+  align-self: flex-end;
+  margin-top: 10px;
+  padding: 15px 80px;
+  background-color: #37251b;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.25s ease;
 }
 
 #contact input[type=submit]:hover {
-    background-color: #795f50;
-    cursor: pointer;
+  background-color: #795f50;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
-    #contact {
-        padding: 40px 10px;
-    }
-}
+
 
 
 /* Gallery Start */
 
 .gallery {
   border: 2px var(--accent) solid;
-  margin: 10px 0;
-  font-family: "Source Sans Pro", "Poppins", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 .gallery .gallery-wrapper {
@@ -204,6 +198,24 @@ html {
   object-fit: fill;
 }
 
+.gallery button {
+  border: none;
+  background-color: var(--darkBrown);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.gallery button:hover {
+  cursor: pointer;
+  background-color: var(--lightBrown);
+}
+
+.gallery a {
+  text-decoration: none;
+  color: white;
+}
+
 .gallery-hover {
   position: absolute;
   top: -100%;
@@ -218,7 +230,7 @@ html {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  transition: top .3s;  
+  transition: top .3s;
 }
 
 .gallery-hover p {
@@ -303,207 +315,207 @@ html {
 
 
 .shop {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1200px;
-    gap: 1.5%;
-    margin: 0 auto;
-    background-color: #795f50;
-    padding: 50px;
-    font-family: Lato, sans-serif;
-    border-radius: 8px 8px 16px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 1200px;
+  gap: 1.5%;
+  margin: 0 auto;
+  background-color: #795f50;
+  padding: 50px;
+  font-family: Lato, sans-serif;
+  border-radius: 8px 8px 16px 16px;
 }
 
 .shop-header {
-    text-align: center;
-    font-family: 'Heebo', sans-serif;
-    font-size: 60px;
-    padding: 30px 0;
-    background-color: #caa673;
-    max-width: 1200px;
-    margin: 20px auto 5px;
-    border-radius: 16px 16px 8px 8px;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+  font-size: 60px;
+  padding: 30px 0;
+  background-color: #caa673;
+  max-width: 1200px;
+  margin: 20px auto 5px;
+  border-radius: 16px 16px 8px 8px;
 }
 
 .shop-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-size 0.33s ease;
-    border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-size 0.33s ease;
+  border-radius: 10px;
 
-    aspect-ratio: 1;
-    background-color: blue;
-    background-size: auto 100%;
-    background-position: center;
-    font-family: 'Heebo', sans-serif;
+  aspect-ratio: 1;
+  background-color: blue;
+  background-size: auto 100%;
+  background-position: center;
+  font-family: 'Heebo', sans-serif;
 
 }
 
 .shop-group:hover {
-    background-size: auto 125%;
+  background-size: auto 125%;
 }
 
 .shop-group h2 {
-    font-size: 28px;
-    color: white;
-    padding: 15px 30px;
-    backdrop-filter: blur(5px);
-    background: rgba(25 25 25 / 0.2);
-    border-radius: 16px;
-    border: white 1px solid;
+  font-size: 28px;
+  color: white;
+  padding: 15px 30px;
+  backdrop-filter: blur(5px);
+  background: rgba(25 25 25 / 0.2);
+  border-radius: 16px;
+  border: white 1px solid;
 }
 
 .shop input[type=checkbox] {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 621;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 621;
 }
 
 
 
-.shop input[type=checkbox]:checked + .shop-dropdown {
-    opacity: 1;
-    translate: 0 100%;
-    z-index: 1000;
+.shop input[type=checkbox]:checked+.shop-dropdown {
+  opacity: 1;
+  translate: 0 100%;
+  z-index: 1000;
 }
 
-.shop input[type=checkbox]:not(:checked) + .shop-dropdown {
-    opacity: 0;
-    translate: 0 50%;
-    z-index: 100;
+.shop input[type=checkbox]:not(:checked)+.shop-dropdown {
+  opacity: 0;
+  translate: 0 50%;
+  z-index: 100;
 }
 
 .shop .shop-dropdown {
-    position: absolute;
-    bottom: 0;
-    z-index: 100;
-    transition: opacity 0.33s ease-out, translate 0.33s ease-out;
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
+  transition: opacity 0.33s ease-out, translate 0.33s ease-out;
 
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    border-radius: 0 0 16px 16px;
-    cursor: default;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0 0 16px 16px;
+  cursor: default;
 }
 
 .shop .shop-dropdown .shop-item {
-    background-color: #e4bc84;
-    width: 100%;
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: #e4bc84;
+  width: 100%;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
 .shop .shop-dropdown .shop-item i {
-    font-size: 24px;
-    cursor: pointer;
-    color: #795f50;
-    transition: color 0.25s ease-out;
+  font-size: 24px;
+  cursor: pointer;
+  color: #795f50;
+  transition: color 0.25s ease-out;
 }
 
 .shop .shop-dropdown .shop-item i:hover {
-    color: #333;
+  color: #333;
 }
 
 .shop .shop-dropdown .shop-item:nth-of-type(2n) {
-    background-color: #caa673;
+  background-color: #caa673;
 }
 
 /* Cart */
 
 .cart-section {
-    max-width: 1000px;
-    margin: 30px auto;
-    background-color: #37251b;
-    font-family: 'Heebo', sans-serif;
-    padding: 30px;
-    border-radius: 16px;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: #37251b;
+  font-family: 'Heebo', sans-serif;
+  padding: 30px;
+  border-radius: 16px;
 }
 
 .cart-section h2 {
-    text-align: center;
-    color: white;
-    border-bottom: 1px solid white;
-    padding: 10px;
-    margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 #cart {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-    border-radius: 16px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 #cart .cart-row {
-    display: flex;
-    align-items: center;
-    vertical-align: middle;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  padding: 20px;
 }
 
 #cart .cart-row:nth-of-type(2n) {
-    background-color:#caa673;
+  background-color: #caa673;
 
 }
 
 #cart .cart-row:nth-of-type(2n + 1) {
-    background-color:#e4bc84;
+  background-color: #e4bc84;
 }
 
 #cart h3 {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 #cart p {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 #cart i {
-    font-size: 24px;
-    justify-self: flex-end;
-    cursor: pointer;
-    color: #795f50;
-    transition: color 0.25s ease-out;
+  font-size: 24px;
+  justify-self: flex-end;
+  cursor: pointer;
+  color: #795f50;
+  transition: color 0.25s ease-out;
 }
 
 #cart i:hover {
-    color: #333;
+  color: #333;
 }
 
 .cart-row.total-row {
-    justify-content: space-between;
-    background-color: #fde7da !important;
+  justify-content: space-between;
+  background-color: #fde7da !important;
 }
 
 #place-order {
-    all: unset;
-    display: block;
-    margin: 15px auto 0;
-    padding: 12px 25px;
-    font-size: 16px;
-    background-color: #795f50;
-    border-radius: 8px;
-    color: white;
-    cursor: pointer;
-    transition: opacity 0.25s ease;
+  all: unset;
+  display: block;
+  margin: 15px auto 0;
+  padding: 12px 25px;
+  font-size: 16px;
+  background-color: #795f50;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.25s ease;
 }
 
 #place-order:hover {
-    opacity: 0.75;
+  opacity: 0.75;
 }
 
 /*---Testimonials---*/
@@ -595,10 +607,12 @@ html {
   opacity: 1;
   transform: translate(-50%, -50%);
 }
+
 #testimonials .card:hover .card__img {
   transform: scale(1);
   filter: blur(3px) brightness(80%);
 }
+
 #testimonials .card__text {
   transform: skewX(12deg);
 }
@@ -610,11 +624,13 @@ html {
     max-width: 80%;
     transform: skewX(0deg);
     border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
+    border-bottom-left-radius: 40px;
   }
+
   #testimonials .card__shap {
     transform: translateX(-5px) skewX(0deg);
   }
+
   #testimonials .card__text {
     transform: skewX(0deg);
   }
@@ -624,13 +640,13 @@ html {
 
 
 @media screen and (max-width: 768px) {
-    .shop {
-        grid-template-columns: 1fr 1fr;
-        padding: 50px 0;
-        gap: 5px;
-    }
+  .shop {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
+    gap: 5px;
+  }
 
-    .shop-group h2 {
-        font-size: 20px;
-    }
+  .shop-group h2 {
+    font-size: 20px;
+  }
 }
