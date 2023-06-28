@@ -1,67 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Bear Coffee</title>
-    <!--Styling-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Bear Coffee</title>
+  <!--Styling-->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
 </head>
+
 <body>
-    
 
-    <!--Front Page-->
-     <div class="hero">
-      <div class="hero-header">
-        <h1>Coding Bear Coffee</h1>
-        <p>From lattes to mochas, we've got them all!</p>
-      </div>
-      <div class="hero-buttons">
-        <button><a href="#info">Learn More</a></button>
-        <button ><a href="#menu">Menu</a></button>
-      </div>
+
+  <!--Front Page-->
+  <div class="hero">
+    <div class="hero-header">
+      <h1>Coding Bear Coffee</h1>
+      <p>From lattes to mochas, we've got them all!</p>
     </div>
+    <div class="hero-buttons">
+      <button><a href="#info">Learn More</a></button>
+      <button><a href="#menu">Menu</a></button>
+    </div>
+  </div>
 
-    <!-- Gallery section start -->
+  <!-- Gallery section start -->
 
   <section class="gallery">
     <div class="gallery-wrapper">
       <div class="gallery-img">
         <div class="gallery-hover">
           <h1>Latte</h1>
+          <button><a href="shopmenu.html">Purchase</a></button>
         </div>
         <img src="img/gallery1.jpg">
       </div>
       <div class="gallery-img">
         <div class="gallery-hover">
           <h1>A Sweet Treat</h1>
+          <button><a href="shopmenu.html">Purchase</a></button>
         </div>
         <img src="img/gallery2.jpg">
       </div>
       <div class="gallery-img">
         <div class="gallery-hover">
           <h1>Macchiato</h1>
+          <button><a href="shopmenu.html">Purchase</a></button>
         </div>
         <img src="img/gallery3.jpg">
       </div>
       <div class="gallery-img">
         <div class="gallery-hover">
           <h1>Iced Coffee</h1>
+          <button><a href="shopmenu.html">Purchase</a></button>
         </div>
         <img src="img/gallery4.jpg">
       </div>
       <div class="gallery-img">
         <div class="gallery-hover">
           <h1>Frappuccino</h1>
+          <button><a href="shopmenu.html">Purchase</a></button>
         </div>
         <img src="img/gallery5.jpg">
       </div>
       <div class="gallery-img">
         <div class="gallery-hover">
           <h1>Cappuccino</h1>
+          <button><a href="shopmenu.html">Purchase</a></button>
         </div>
         <img src="img/gallery6.jpg">
       </div>
@@ -70,100 +77,105 @@
 
   <!-- Gallery section end -->
 
-    <!-------Testimonials section Start------->
+  <!-------Testimonials section Start------->
 
-    <section id="testimonials">
-      <h1>What people say about us</h1>
+  <section id="testimonials">
+    <h1>What people say about us</h1>
 
-      <div class="cards">
-        <div class="card">
-          <div class="card__shap">
-            <img src="img/img_avatar.png" alt="person 1" class="card__img" />
-            <figcaption class="card__caption">John Borris</figcaption>
-          </div>
-
-          <div class="card__text">
-            <h3>The best coffee ever!</h3>
-            <p>
-              The coffee is simply exceptional! Its rich aroma and robust flavor instantly captivate your senses. Each sip is a delightful journey, awakening your taste buds with its perfect balance of strength and smoothness. An absolute must-try for coffee enthusiasts!
-            </p>
-          </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card__shap">
+          <img src="img/img_avatar.png" alt="person 1" class="card__img" />
+          <figcaption class="card__caption">John Borris</figcaption>
         </div>
 
-
-        <div class="card">
-          <div class="card__shap">
-            <img src="img/img_avatar2.png" alt="person 2" class="card__img" />
-            <figcaption class="card__caption">Michelle Phillips</figcaption>
-          </div>
-
-          <div class="card__text">
-            <h3>Number One Coffee Shop in Canada.</h3>
-            <p>
-              Coding Bear Coffee Shop is a coding enthusiast's paradise! The cozy ambiance, coupled with the aromatic coffee blends, creates the perfect environment for productivity. Friendly staff and ample workspace make it an ideal spot to fuel your coding sessions. Highly recommended!
-            </p>
-          </div>
+        <div class="card__text">
+          <h3>The best coffee ever!</h3>
+          <p>
+            The coffee is simply exceptional! Its rich aroma and robust flavor instantly captivate your senses. Each sip
+            is a delightful journey, awakening your taste buds with its perfect balance of strength and smoothness. An
+            absolute must-try for coffee enthusiasts!
+          </p>
         </div>
       </div>
-        
-        </section>
-    <!-------Testimonials section End------->
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-
-        <form action="">
-            <div class="form-section">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-            </div>
-
-            <div class="form-section">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-            </div>
-
-            <div class="form-section">
-                <label for="text">Your Message</label>
-                <textarea name="text" id="text"></textarea>
-            </div>
-
-            <input type="submit" value="Send" onclick="event.preventDefault()">
-        </form>
-    </section>
-    <!-- End of Contact Section -->
 
 
-    <div class="footer">
-        <div class="footer-links">
-            <h3>USEFUL LINKS</h3>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Blog</a>
-            <a href="#">Shop</a>
-            <a href="#">Contact</a>
+      <div class="card">
+        <div class="card__shap">
+          <img src="img/img_avatar2.png" alt="person 2" class="card__img" />
+          <figcaption class="card__caption">Michelle Phillips</figcaption>
         </div>
-        <div class="footer-newsletter">
-            <h3>NEWSLETTER</h3>
-            <br>
-            <form>
-                <input type="text" placeholder="Your Email Address">
-                <button type="submit">SUBSCRIBE NOW</button>
-            </form>
+
+        <div class="card__text">
+          <h3>Number One Coffee Shop in Canada.</h3>
+          <p>
+            Coding Bear Coffee Shop is a coding enthusiast's paradise! The cozy ambiance, coupled with the aromatic
+            coffee blends, creates the perfect environment for productivity. Friendly staff and ample workspace make it
+            an ideal spot to fuel your coding sessions. Highly recommended!
+          </p>
         </div>
-        <div class="footer-contact">
-            <h3>CONTACT</h3>
-            <p>123, Coffee Road, L5D H8Q<br>Toronto, On, Canada</p>
-            <div class="social-icons">
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-linkedin-in"></i>
-            </div>
-        </div>
+      </div>
     </div>
-    <script src="main.js"></script>
-    <script src="https://kit.fontawesome.com/11fc4690a2.js" crossorigin="anonymous"></script>
+
+  </section>
+  <!-------Testimonials section End------->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+
+    <form action="">
+      <div class="form-section">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+      </div>
+
+      <div class="form-section">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+
+      <div class="form-section">
+        <label for="text">Your Message</label>
+        <textarea name="text" id="text"></textarea>
+      </div>
+
+      <input type="submit" value="Send" onclick="event.preventDefault()">
+    </form>
+  </section>
+  <!-- End of Contact Section -->
+
+
+  <div class="footer">
+    <div class="footer-links">
+      <h3>USEFUL LINKS</h3>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Blog</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-newsletter">
+      <h3>NEWSLETTER</h3>
+      <br>
+      <form>
+        <input type="text" placeholder="Your Email Address">
+        <button type="submit">SUBSCRIBE NOW</button>
+      </form>
+    </div>
+    <div class="footer-contact">
+      <h3>CONTACT</h3>
+      <p>123, Coffee Road, L5D H8Q<br>Toronto, On, Canada</p>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/11fc4690a2.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
