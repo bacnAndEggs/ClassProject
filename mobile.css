@@ -52,3 +52,19 @@
 
 
 }
+
+@media (max-width: 900px) {
+  .hero-header {
+    font-size: 6vw;
+  }
+
+  .hero {
+    height: 75vh;
+  }
+
+  .hero-buttons button {
+    padding: 5vw 11vw;
+    font-size: 4.2vw;
+    min-width: 30vw;
+  }
+}
